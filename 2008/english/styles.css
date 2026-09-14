@@ -1,0 +1,325 @@
+/*-----------------------00.ファイル全体の設定------------------------*/
+* {
+	margin: 0;
+	padding: 0;
+}
+.hide {
+	display:none;
+	width:0;
+}
+/*-----------------------01.HTML 全体の設定------------------------*/
+body {
+	/*上部スペース*/
+	margin-top: 0;
+	/*位置センター合わせ*/
+	text-align: center;
+	/*背景画像*/
+	background-image:url(../images/english/bg.gif);background-repeat:repeat-x;
+	/*背景色*/
+	background-color: #FFFFFF;
+	/*基本フォントサイズ*/
+	font-size:12px;
+//	font-family:"ＭＳ ゴシック", "Osaka−等幅";
+}
+/*リンクカラー設定*/
+A:link {color: #0000FF;
+}
+/*リンクカラー(訪問済み）設定*/
+A:visited {color: #FF6666;
+}
+/*フォントの太字スタイル*/
+#st {
+	font-weight:bold;
+}
+
+/*------------------------02.HTMLを構成するDIVの設定------------------------*/
+body div {
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: auto;
+}
+/*------------------------03.DIVにあてはめるスタイルの設定(id,class)------------------------*/
+/*-----(idは1ページ内で同じ名前を1回しか使用できない,class同じ名前を何度も使用できる)-------*/
+
+/*-----03-01.上部バー(タイトル部）で使用するのスタイル-----*/
+#title {
+	position:relative;
+	height:110px;
+	width:742px;
+	background-image:url(../images/english/title_bg.jpg);
+	background-repeat:no-repeat;
+	background-position:left bottom;
+}
+#title2 {
+	position:relative;
+	height:108px;
+	width:742px;
+	background-image:url(../images/english/title_bg_top.jpg);
+	background-repeat:no-repeat;
+	background-position:left bottom;
+}
+/*上部バーにあるロゴ等のスタイル(位置）*/
+#title  img.logo01 {
+position:absolute;top:16px;left:30px;
+}
+#title2  img.isfrlogo2 {
+position:absolute;top:19px;left:13px;
+}
+#title  img.e-side {
+position:absolute;top:62px;left:68px;
+}
+#title  img.ISFRjapan {
+position:absolute;top:30px;left:406px;
+}
+#title2  img.ISFRjapan2 {
+position:absolute;top:30px;left:406px;
+}
+#title  img.date_venue {
+position:absolute;top:30px;left:193px;
+}
+#title2  img.date_venue2 {
+position:absolute;top:30px;left:193px;
+}
+#langbtn {
+	position:relative;
+	height:28px;
+	width:742px;
+	background-image:url(../images/english/langbtn_bg.jpg);
+	background-repeat:no-repeat;
+	background-position:left bottom;
+	text-align:right;
+}
+
+#langbtn img{
+	border:0;
+}
+
+
+/*-----03-02.コンテンツバーの設定-----*/
+#contentsbar {
+	text-align: left;
+	position:relative;
+	height:31px;
+	width:742px;
+	background-image:url(../images/english/contents_bg.jpg);
+	background-repeat:no-repeat;
+}
+#contentstop {
+	text-align: left;
+	position:relative;
+	height:31px;
+	width:742px;
+	background-image:url(../images/english/contents_bg_top.jpg);
+	background-repeat:no-repeat;
+}
+
+/*-----03-03.サイドメニューと本文の設定-----*/
+
+/*サイドメニューと本文を中に含むコンテナ部の設定*/
+#container {
+	width:742px;
+	background-image:url(../images/english/contents_bg.jpg);
+	background-repeat:repeat-y;
+}
+#containertop {
+	width:742px;
+	background-image:url(../images/english/contents_bg.jpg);
+	background-repeat:repeat-y;
+}
+
+/*サイドメニューの設定*/
+#menu {
+	width:183px;
+	float: left;
+}
+#menu ul {
+	list-style-type: none;
+	margin-left: 6px;
+	margin-bottom:0;
+	padding: 0;
+}
+#menu li {
+ 	display: inline;
+	/*メニューボタン画像の立幅px*/
+	margin: 0;
+}
+#menu li a{
+	height:25px;
+	display:block;
+	text-decoration:none;
+}
+
+/*メニューボタンの画像指定*/
+
+
+/*「a」通常：「a:hover」マウスon時*/
+#menu li.menu01 a {
+	background-image:url(../images/english/menu_01.gif);
+}
+#menu li.menu01 a:hover {
+	background-image:url(../images/english/menu_01r.gif);
+}
+#menu li.menu02 a {
+	background-image:url(../images/english/menu_02.gif);
+}
+#menu li.menu02 a:hover {
+	background-image:url(../images/english/menu_02r.gif);
+}
+#menu li.menu03 a {
+	background-image:url(../images/english/menu_03.gif);
+}
+#menu li.menu03 a:hover {
+	background-image:url(../images/english/menu_03r.gif);
+}
+#menu li.menu04 a {
+	background-image:url(../images/english/menu_04.gif);
+}
+#menu li.menu04 a:hover {
+	background-image:url(../images/english/menu_04r.gif);
+}
+#menu li.menu05 a {
+	background-image:url(../images/english/menu_05.gif);
+}
+#menu li.menu05 a:hover {
+	background-image:url(../images/english/menu_05r.gif);
+}
+#menu li.menu06 a {
+	background-image:url(../images/english/menu_06.gif);
+}
+#menu li.menu06 a:hover {
+	background-image:url(../images/english/menu_06r.gif);
+}
+#menu li.menu07 a {
+	background-image:url(../images/english/menu_07.gif);
+}
+#menu li.menu07 a:hover {
+	background-image:url(../images/english/menu_07r.gif);
+}
+#menu li.menu08 a {
+	background-image:url(../images/english/menu_08.gif);
+}
+#menu li.menu08 a:hover {
+	background-image:url(../images/english/menu_08r.gif);
+}
+#menu li.menu09 a {
+	background-image:url(../images/english/menu_09.gif);
+}
+#menu li.menu09 a:hover {
+	background-image:url(../images/english/menu_09r.gif);
+}
+#menu li.menu10 a {
+	background-image:url(../images/english/menu_10.gif);
+}
+#menu li.menu10 a:hover {
+	background-image:url(../images/english/menu_10r.gif);
+}
+#menu li.menu11 a {
+	background-image:url(../images/english/menu_11.gif);
+}
+#menu li.menu11 a:hover {
+	background-image:url(../images/english/menu_11r.gif);
+}
+
+#main {
+	text-align: left;
+	width:559px;
+	float: right;
+}
+#main h1 {
+	width:547px;
+	height:30px;
+	line-height:100%;
+	margin-bottom:10px;
+	margin-left:6px;
+}
+
+#main h2 {
+	width:500px;
+	height:16px;
+	line-height:100%;
+	margin-left:38px;
+	margin-top:15px;
+	font-size:13px;
+	font-weight:bold;
+	color: #005BB7
+}
+
+#main dl {
+	margin-left:30px;
+	margin-top:30px;
+}
+#main dt{
+	clear:both;
+	width:520px;
+	float:left;
+}
+#main dt img {
+	width: 102px;
+	float:left;
+}
+#main dd{
+	margin: 0 0 15px 0px;
+}
+#main table {
+	margin-left:50px;
+	margin-bottom:20px;
+	border-color: #CCCCCC;
+}
+#main td{
+	padding:5px 0 5px 5px;
+	font-size:12px;
+	line-height:120%
+}
+#main th{
+	padding:5px 0 5px 5px;
+	font-size:12px;
+	font-weight:bold;
+	text-align:left;
+}
+#main p{
+	margin-left:40px;
+	margin-right:40px;
+	margin-bottom:0px;
+	margin-top:0px;
+	line-height:18px;
+	font-size:12px
+}
+#main ol{
+	margin-left:80px;
+	margin-right:40px;
+	margin-top:0px;
+	margin-bottom:10px;
+	margin-right:20px;
+}
+#main li{
+	line-height:18px;
+	font-size:12px;
+	margin-right:10px;
+}
+
+
+
+
+#footer {
+	width: 742px;
+	height:40px;
+	clear: both;
+	/*background-color:#FFFFFF*/
+	background-image:url(../images/english/footer_bg.gif);
+	background-repeat:no-repeat;
+	background-position:left bottom;
+}
+#footer2 {
+	width: 742px;
+	height:40px;
+	clear: both;
+	background-color:#FFFFFF;
+}
+#footer2 p {
+margin-top:0px;
+margin-right:5px;
+	font-size:10px;
+	text-align:right;
+}
+

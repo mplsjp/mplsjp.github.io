@@ -1,0 +1,461 @@
+@charset "Shift_JIS";
+/*-----------------------00.ファイル全体の設定------------------------*/
+* {
+	margin: 0;
+	padding: 0;
+}
+.hide {
+	display:none;
+	width:0;
+}
+/*-----------------------01.HTML 全体の設定------------------------*/
+body {
+	/*上部スペース*/
+	margin-top: 10px;
+	/*位置センター合わせ*/
+	text-align: center;
+	/*背景画像*/
+	background-image:url(/images/bg.gif);background-repeat:repeat-x;
+	/*背景色*/
+	background-color: #FFFFFF;
+	/*基本フォントサイズ*/
+	font-size:14px;
+	font-family:"ＭＳ ゴシック", "Osaka－等幅";
+}
+/*リンクカラー設定*/
+A:link {color: #0000FF;
+}
+/*リンクカラー(訪問済み）設定*/
+A:visited {color: #FF6666;
+}
+/*フォントの太字スタイル*/
+#st {
+	font-weight:bold;
+}
+
+/*------------------------02.HTMLを構成するDIVの設定------------------------*/
+body div {
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: auto;
+}
+/*------------------------03.DIVにあてはめるスタイルの設定(id,class)------------------------*/
+/*-----(idは1ページ内で同じ名前を1回しか使用できない,class同じ名前を何度も使用できる)-------*/
+
+/*-----03-01.上部バー(タイトル部）で使用するのスタイル-----*/
+#title {
+	position:relative;
+	height:108px;
+	width:742px;
+	background-image:url(/images/title_bg.jpg);
+	background-repeat:no-repeat;
+	background-position:left bottom;
+}
+#title2 {
+	position:relative;
+	height:108px;
+	width:742px;
+	background-image:url(/images/title_bg_top.jpg);
+	background-repeat:no-repeat;
+	background-position:left bottom;
+}
+/*上部バーにあるロゴ等のスタイル(位置）*/
+#title  img.logo01 {
+position:absolute;top:16px;left:30px;
+}
+#title2  img.isfrlogo2 {
+position:absolute;top:19px;left:13px;
+}
+#title  img.e-side {
+position:absolute;top:62px;left:68px;
+}
+#title  img.ISFRjapan {
+position:absolute;top:30px;left:406px;
+}
+#title2  img.ISFRjapan2 {
+position:absolute;top:30px;left:406px;
+}
+#title  img.date_venue {
+position:absolute;top:30px;left:193px;
+}
+#title2  img.date_venue2 {
+position:absolute;top:30px;left:193px;
+}
+
+/*-----03-02.コンテンツバーの設定-----*/
+#contentsbar {
+	text-align: left;
+	position:relative;
+	height:31px;
+	width:742px;
+	background-image:url(/images/contents_bg.jpg);
+	background-repeat:no-repeat;
+}
+#contentstop {
+	text-align: left;
+	position:relative;
+	height:31px;
+	width:742px;
+	background-image:url(/images/contents_bg_top.jpg);
+	background-repeat:no-repeat;
+}
+
+/*-----03-03.サイドメニューと本文の設定-----*/
+
+/*サイドメニューと本文を中に含むコンテナ部の設定*/
+#container {
+	width:742px;
+	background-image:url(/images/contents_bg.gif);
+	background-repeat:repeat-y;
+}
+#containertop {
+	width:742px;
+	background-image:url(/images/contents_bg.gif);
+	background-repeat:repeat-y;
+}
+
+/*サイドメニューの設定*/
+#menu {
+	width:178px;
+	float: left;
+}
+#menu ul {
+	list-style-type: none;
+	margin-left: 6px; 
+	padding: 0;
+}
+#menu li {
+ 	display: inline;
+	/*メニューボタン画像の立幅px*/
+	height:31px;
+	margin: 0;
+}
+#menu li a{
+	height:31px;
+	display:block;
+	text-decoration:none;
+}
+
+/*メニューボタンの画像指定*/
+/*「a」通常：「a:hover」マウスon時*/
+#menu li.menu10 a {
+	background-image:url(/images/menu_01.gif);
+}
+#menu li.menu10 a:hover {
+	background-image:url(/images/menu_01r.gif);
+}
+#menu li.menu02 a {
+	background-image:url(/images/menu_02.gif);
+}
+#menu li.menu02 a:hover {
+	background-image:url(/images/menu_02r.gif);
+}
+#menu li.menu03 a {
+	background-image:url(/images/menu_03.gif);
+}
+#menu li.menu03 a:hover {
+	background-image:url(/images/menu_03r.gif);
+}
+#menu li.menu04 a {
+	background-image:url(/images/menu_04.gif);
+}
+#menu li.menu04 a:hover {
+	background-image:url(/images/menu_04r.gif);
+}
+#menu li.menu05 a {
+	background-image:url(/images/menu_05.gif);
+}
+#menu li.menu05 a:hover {
+	background-image:url(/images/menu_05r.gif);
+}
+#menu li.menu06 a {
+	background-image:url(/images/menu_06.gif);
+}
+#menu li.menu06 a:hover {
+	background-image:url(/images/menu_06r.gif);
+}
+#menu li.menu07 a {
+	background-image:url(/images/menu_07.gif);
+}
+#menu li.menu07 a:hover {
+	background-image:url(/images/menu_07r.gif);
+}
+#menu li.menu08 a {
+	background-image:url(/images/menu_08.gif);
+}
+#menu li.menu08 a:hover {
+	background-image:url(/images/menu_08r.gif);
+}
+
+#menu li.menu10 a {
+	background-image:url(/images/menu_01.gif);
+}
+#menu li.menu10 a:hover {
+	background-image:url(/images/menu_01r.gif);
+}
+#menu li.menu11 a {
+	background-image:url(/images/menu_11.gif);
+}
+#menu li.menu11 a:hover {
+	background-image:url(/images/menu_11r.gif);
+}
+
+
+#menu li.menu31 a {
+	background-image:url(/images/menu_31.gif);
+}
+#menu li.menu31 a:hover {
+	background-image:url(/images/menu_31r.gif);
+}
+#menu li.menu32 a {
+	background-image:url(/images/menu_32.gif);
+}
+#menu li.menu32 a:hover {
+	background-image:url(/images/menu_32r.gif);
+}
+#menu li.menu41 a {
+	background-image:url(/images/menu_41.gif);
+}
+#menu li.menu41 a:hover {
+	background-image:url(/images/menu_41r.gif);
+}
+#menu li.menu42 a {
+	background-image:url(/images/menu_42.gif);
+}
+#menu li.menu42 a:hover {
+	background-image:url(/images/menu_42r.gif);
+}
+#menu li.menu43 a {
+	background-image:url(/images/menu_43.gif);
+}
+#menu li.menu43 a:hover {
+	background-image:url(/images/menu_43r.gif);
+}
+#menu li.menu44 a {
+	background-image:url(/images/menu_44.gif);
+}
+#menu li.menu44 a:hover {
+	background-image:url(/images/menu_44r.gif);
+}
+
+
+/*トップページ（index.html）のテキスト部設定*/
+#maintop {
+	text-align: left;
+	width:564px;
+	height:539px;
+	float: right;
+	margin-right:0px;
+	/*トップページ（index.html）の背景*/
+	background-image:url(/images/main_bg_top.jpg);
+	background-repeat:repeat-x;
+}
+#maintop h1 {
+	width:559px;
+	height:31px;
+	line-height:100%;
+	background-image:url(/images/h1_bg_top.gif);
+	background-repeat:repeat-x;
+	margin-left:1px;
+	margin-bottom:10px;
+}
+
+#maintop h2 {
+	width:559px;
+	height:31px;
+	line-height:100%;
+	margin-left:1px;
+	margin-bottom:10px;
+	font-size:14px;
+	font-weight:bold;
+	color:#0000FF
+}
+
+#maintop dl {
+	margin-left:30px;
+}
+#maintop dt{
+	clear:both;
+	width:490px;
+	float:left;
+	color: #000000;
+}
+#maintop dd{
+	margin: 0 0 15px 0px;
+}
+#maintop table {
+	margin-left:20px;
+	margin-bottom:20px;
+}
+#maintop td{
+	padding:2px 0 2px 5px;
+	vertical-align:top;
+	font-size:12px;
+}
+#maintop th{
+	padding:2px 0 2px 5px;
+	vertical-align:top;
+	font-size:12px;
+	font-weight:normal;
+	text-align:left;
+	background-color:#e1f0ff;
+}
+#maintop p{
+	margin-left:25px;
+	margin-right:20px;
+	margin-bottom:15px;
+	line-height:18px;
+}
+#maintop ol{
+	margin-left:60px;
+	margin-top:10px;
+	margin-bottom:10px;
+	margin-right:20px;
+}
+#maintop li{
+	line-height:18px;
+}
+
+
+
+#main {
+	text-align: left;
+	width:562px;
+	float: right;
+}
+#main h1 {
+	width:545px;
+	height:31px;
+	line-height:100%;
+	background-image:url(/images/h1_bg.gif);
+	background-repeat:repeat-x;
+	margin-bottom:10px;
+}
+
+#main h2 {
+	width:500px;
+	height:16px;
+	line-height:100%;
+	margin-left:38px;
+	margin-top:15px;
+	font-size:13px;
+	font-weight:bold;
+	color: #005BB7
+}
+
+#main dl {
+	margin-left:30px;
+	margin-top:30px;
+}
+#main dt{
+	clear:both;
+	width:520px;
+	float:left;
+}
+#main dt img {
+	width: 102px;
+	float:left;
+}
+#main dd{
+	margin: 0 0 15px 0px;
+}
+#main table {
+	margin-left:50px;
+	margin-bottom:20px;
+	border-color: #CCCCCC;
+}
+#main td{
+	padding:5px 0 5px 5px;
+	font-size:12px;
+	line-height:120%
+}
+#main td.prog{
+	padding:5px 0 5px 5px;
+	font-size:12px;
+	line-height:120%
+}
+
+#main th{
+	padding:5px 0 5px 5px;
+	font-size:12px;
+	font-weight:bold;
+	text-align:left;
+}
+#main p{
+	margin-left:40px;
+	margin-right:40px;
+	margin-bottom:0px;
+	margin-top:0px;
+	line-height:18px;
+	font-size:12px
+}
+#main ol{
+	margin-left:80px;
+	margin-right:40px;
+	margin-top:0px;
+	margin-bottom:10px;
+	margin-right:20px;
+}
+#main li{
+	line-height:18px;
+	font-size:12px;
+	margin-right:10px;
+}
+#main P.progt {
+	font-size: 12px;
+	line-height: 140%;
+	color: #006699;
+	margin-left:5px;
+	margin-bottom:0;
+}
+#main P.progt2 {
+	font-size: 12px;
+	line-height: 140%;
+	color: #DD710F;
+	margin-left:5px;
+	margin-bottom:0;
+}
+
+#main P.progtsub {
+	font-size: 12px;
+	line-height: 140%;
+	padding-left:1px;
+	padding-right:0;
+	margin-right:0;
+	color:#666;
+}
+#main table.program {
+	margin-left:5px;
+	margin-bottom:0px;
+}
+#main table.program td{
+	padding:2px 0 0 5px;
+	vertical-align:top;
+	font-size:12px;
+}
+
+
+
+
+#footer {
+	width: 742px;
+	height:40px;
+	clear: both;
+	/*background-color:#FFFFFF*/
+	background-image:url(/images/footer_bg.gif);
+	background-repeat:no-repeat;
+	background-position:left bottom;
+}
+#footer2 {
+	width: 742px;
+	height:40px;
+	clear: both;
+	background-color:#FFFFFF;
+}
+#footer2 p {
+margin-top:0px;
+margin-right:5px;
+	font-size:10px;
+	text-align:right;
+}

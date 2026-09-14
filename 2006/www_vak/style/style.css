@@ -1,0 +1,235 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+.hide {
+	display:none;
+	width:0;
+}
+body {
+	text-align: center;
+	background-image:url(../images/bg.gif);
+	font-size:12px;
+}
+body div {
+	margin: 0 auto;
+}
+#title {
+	position:relative;
+	height:82px;
+	width:742px;
+	background-image:url(../images/title_bg.jpg);
+	background-repeat:no-repeat;
+	background-position:left bottom;	
+}
+#title  img.ietf {
+position:absolute;top:3px;left:11px;
+}
+#title  img.mplslogo {
+position:absolute;top:18px;left:15px;
+}
+#title  img.e-side {
+position:absolute;top:51px;left:68px;
+}
+#title  img.mplsjapan {
+position:absolute;top:19px;left:406px;
+}
+#title  img.date_venue {
+position:absolute;top:59px;left:406px;
+}
+#contents {
+	text-align: left;
+	position:relative;
+	height:31px;
+	width:742px;
+	background-image:url(../images/contents_bg.jpg);
+	background-repeat:no-repeat;
+}
+#container {
+	width:742px;
+	background-image:url(../images/main_bg.gif);
+	background-repeat:repeat-y;
+}
+#menu {
+	width:173px;
+	float: left;
+}
+#menu ul {
+	list-style-type: none;
+	margin-left: 6px; 
+	padding: 0;
+}
+#menu li {
+ 	display: inline;
+	height:29px;
+	margin: 0;
+}
+#menu li a{
+	width:172px;
+	height:31px;
+	display:block;
+	text-decoration:none;
+}
+#menu li.outline a {
+	background-image:url(../images/menu_outline.gif);
+}
+#menu li.outline a:hover {
+	background-image:url(../images/menu_outline_on.gif);
+}
+#menu li.committee a {
+	background-image:url(../images/menu_committee.gif);
+}
+#menu li.committee a:hover {
+	background-image:url(../images/menu_committee_on.gif);
+}
+#menu li.program a {
+	background-image:url(../images/menu_program.gif);
+}
+#menu li.program a:hover {
+	background-image:url(../images/menu_program_on.gif);
+}
+#menu li.sponsors a {
+	background-image:url(../images/menu_sponsors.gif);
+}
+#menu li.sponsors a:hover {
+	background-image:url(../images/menu_sponsors_on.gif);
+}
+#menu li.regist a {
+	background-image:url(../images/menu_regist.gif);
+}
+#menu li.regist a:hover {
+	background-image:url(../images/menu_regist_on.gif);
+}
+#menu li.venue a {
+	background-image:url(../images/menu_venue.gif);
+}
+#menu li.venue a:hover {
+	background-image:url(../images/menu_venue_on.gif);
+}
+#menu li.contact a {
+	background-image:url(../images/menu_contact.gif);
+}
+#menu li.contact a:hover {
+	background-image:url(../images/menu_contact_on.gif);
+}
+#menu li.prev a {
+	background-image:url(../images/menu_prev.gif);
+}
+#menu li.prev a:hover {
+	background-image:url(../images/menu_prev_on.gif);
+}
+#menu li.toppage a {
+	background-image:url(../images/menu_toppage.gif);
+}
+#menu li.toppage a:hover {
+	background-image:url(../images/menu_toppage_on.gif);
+}
+#menu li.exhibit a {
+	background-image:url(../images/menu_exhibit.gif);
+}
+#menu li.exhibit a:hover {
+	background-image:url(../images/menu_exhibit_on.gif);
+}
+#menu li.booth a {
+	background-image:url(../images/menu_booth.gif);
+}
+#menu li.booth a:hover {
+	background-image:url(../images/menu_booth_on.gif);
+}
+#main {
+	text-align: left;
+	width:557px;
+	float: right;
+	margin-right:1px;
+}
+#main h1 {
+	width:551px;
+	height:31px;
+	line-height:100%;
+	background-image:url(../images/h1_bg.gif);
+	background-repeat:repeat-x;
+	margin-bottom:15px;
+}
+#main h2 {
+	color:#142171;
+	font-weight:bold;
+	font-size:12px;
+	margin-left:20px;
+	margin-bottom:15px;
+}
+#main dl {
+	margin-left:20px;
+}
+#main dt{
+	clear:both;
+	width:80px;
+	float:left;
+}
+#main dd{
+	margin: 0 0 15px 0px;
+}
+#main table {
+	margin-left:20px;
+	margin-bottom:20px;
+}
+#main td{
+	padding:2px 0 2px 5px;
+	vertical-align:top;
+	font-size:12px;
+}
+#main th{
+	padding:2px 0 2px 5px;
+	vertical-align:top;
+	font-size:12px;
+	font-weight:normal;
+	text-align:left;
+	background-color:#e1f0ff;
+}
+#main p{
+	margin-left:20px;
+	margin-right:20px;
+	margin-bottom:15px;
+	line-height:18px;
+}
+#main ol{
+	margin-left:60px;
+	margin-top:10px;
+	margin-bottom:10px;
+	margin-right:20px;
+}
+#main li{
+	line-height:18px;
+}
+P.progt {
+	font-size: 12px;
+	line-height: 140%;
+/*	color: #ff9900;	*/
+}
+P.progtsub {
+	font-size: 12px;
+	line-height: 140%;
+	padding-left:20px;
+}
+
+
+#keirin {
+	width: 742px;
+	clear: both;
+	background-color:#FFFFFF;
+	background-image:url(../images/footer_bg.jpg);
+	background-repeat:no-repeat;
+	background-position:left bottom;	
+}
+#footer {
+	width: 742px;
+	height:17px;
+	clear: both;
+	background-color:#FFFFFF;
+	background-image:url(../images/footer_bg.jpg);
+	background-repeat:no-repeat;
+	background-position:left bottom;	
+}
+#footer p {
+	margin: 0 12px;
+	line-height: 150%;
+}
