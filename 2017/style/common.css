@@ -1,0 +1,123 @@
+body {
+    -webkit-text-size-adjust: 100%;
+}
+
+header {
+    padding: 0px 0px 0px 0px;
+    margin-bottom: 24px;
+    height: 37px;
+}
+
+header img {
+    display: inline;
+}
+
+header h1 {
+    display: inline;
+    clear: none;
+    padding: 0px 0px 0px 20px;
+    height: 37px;
+    vertical-align: 10%;
+}
+
+/*
+ * program tables
+ */
+
+table.program-table {
+    border: 1px solid;
+}
+.program-table tr.even-row {
+    background: #F8F8F8;
+}
+.program-table tr.odd-row {
+    background: #F0F0F0;
+}
+.program-table th {
+    background: #222222;
+    color: white;
+}
+.program-table th,
+.program-table td
+{
+    padding: 5px;
+}
+
+.program-table th.time,
+.program-table td.time
+{
+    width: 7em;
+}
+
+/*
+ * programs
+ */
+.program ol,
+.program ul,
+.program li
+{
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+}
+
+/* Session's header */
+.program div.session-title {
+    color: #222255;
+    font-weight: bold;
+}
+
+.program > ol > li:first-child {
+    padding-top: 0px;
+    padding-left: 0em;
+}
+
+.program > ol > li {
+    padding-top: 15px;
+    padding-bottom: 0px;
+    padding-left: 2em;
+    clear: both;
+}
+
+ul.presentation > li {
+    float: left;
+}
+
+ul.presentation > li.presentation-title {
+    font-weight: bold;
+}
+
+ul.presentation > li.material {
+    padding-left: 8px;
+}
+
+ul.presentation > li.presenter {
+    clear: both;
+    padding-left: 16px;
+}
+
+ul.presentation > li.presenter + li {
+    padding-left: 8px;
+}
+
+ul.presentation > li.abstract {
+    padding-top: 4px;
+    padding-left: 16px;
+    font-size: small;
+}
+
+/*
+ * List of the program committee
+ */
+table.committee-table {
+    margin-left: 50px;
+}
+.committee-table th.labeled {
+    background-color: #C6D2B0;
+    padding: 5px 20px 5px 5px;
+    text-align: left;
+    vertical-align: top;
+}
+.committee-table td {
+    padding: 5px 20px 5px 5px;
+}
